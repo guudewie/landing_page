@@ -1,36 +1,107 @@
+/*
+*{border: 2px solid royalblue;}
+*/
+
 body{
+    margin: 0;
+
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
 }
+
+
+/*######################### HEADER ##########################*/
+
 
 .header {
     background-color: #1F2937;
     color: white;
-    padding: 10px 150px;
+    padding: 20px 130px;
 
     display: flex;
+    align-items: center;
+    gap: 50px;
+ 
 }
 
 .headerleft,
 .headerright {
     display: flex;
     flex: 1;
+
 }
 
 .headerleft {
-    margin-right: 10px;
     justify-content: flex-start;
 }
 
 .headerright {
-    margin-left: 10px;
+
     justify-content: flex-end;
     gap: 30px;
+    min-height: 0;
 }
+
+.Logo{
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
 
 .headerlink {
     text-decoration: none;
-    color: #E5E7EB;
+    color: #e2e4e6;
     font-size: 18px;
+    white-space: nowrap;
+    min-height: 0;
+}
+
+
+/*######################### MAIN ##########################*/
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-top{
+    flex-shrink: 1;
+    height: 200px;
+
+    background-color: #1F2937;
+}
+
+.main-middle{
+    flex-shrink: 1;
+    height: 200px;
+
+    background-color: #E5E7EB;
+}
+
+.main-bottom{
+    flex-shrink: 1;
+    height: 200px;
+}
+
+
+/*######################### FOOTER ##########################*/
+
+.footer {
+
+    background-color: #1F2937;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #e2e4e6;
+    font-size: 18px;
+    white-space: nowrap;
+    height: 140px;
 }
