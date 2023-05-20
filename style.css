@@ -9,6 +9,7 @@ body{
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 
@@ -73,6 +74,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 80px;
     padding: 80px 130px;
 
@@ -151,7 +153,6 @@ body{
     width: 130px;
     height: 130px;
     border-radius: 10px;
-    border: 2px solid blue;
 }
 
 .item-text {
