@@ -1,6 +1,6 @@
-
+/*
 *{border: 1px solid blue;}
-
+*/
 
 body{
     margin: 0;
@@ -40,15 +40,11 @@ body{
 .headerright {
 
     justify-content: flex-end;
-    gap: 30px;
+    gap: 60px;
     min-height: 0;
 }
 
 .Logo{
-    color: #F9FAF8;
-    font-size: 24px;
-    font-weight: bold;
-
     white-space: nowrap;
     width: 100px;
 }
@@ -88,7 +84,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -108,9 +103,6 @@ body{
     color: #F9FAF8;
     padding: 5px;
     border: none;
-    border-radius: 5px;
-    width: 100px;
-    height: 30px;
 
 }
 
@@ -125,12 +117,10 @@ body{
 /*-------------------- MAIN MIDDLE --------------------*/
 
 .main-middle{
-    padding: 80px 130px;
+    padding: 80px 200px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-
-    background-color: #E5E7EB;
     text-align: center;
 }
 
@@ -142,7 +132,7 @@ body{
 
 .main-middle-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
     flex-shrink: 0;
     flex-wrap: wrap;
@@ -170,10 +160,81 @@ body{
     width: 130px;
 }
 
+/*-------------------- MAIN BOTTOM --------------------*/
+
 .main-bottom{
-    flex-shrink: 1;
-    height: 200px;
+    background-color: #E5E7EB;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 120px 200px;
 }
+
+.main-bottom-text{
+    color: #1F2937;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+}
+.main-bottom-quote{
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/*---------------------- MAIN ACTION ----------------------*/
+
+.main-action{
+    padding: 120px 130px;
+}
+
+.main-action-container{
+    background-color: #3882f6;
+    border-radius: 5px;
+    padding: 50px 100px;
+    gap: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-action-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-action-header{
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-action-lower{
+    color: #e2e4e6;
+    font-size: 18px;
+}
+
+.main-action-button{
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 3px;
+    border: 1.5px solid white;
+}
+
+button{
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: large;
+}
+
 
 
 /*######################### FOOTER ##########################*/
