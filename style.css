@@ -1,5 +1,5 @@
 
-*{border: 2px solid royalblue;}
+*{border: 1px solid blue;}
 
 
 body{
@@ -23,6 +23,7 @@ body{
     display: flex;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
  
 }
 
@@ -30,7 +31,6 @@ body{
 .headerright {
     display: flex;
     flex: 1;
-
 }
 
 .headerleft {
@@ -50,6 +50,7 @@ body{
     font-weight: bold;
 
     white-space: nowrap;
+    width: 100px;
 }
 
 
@@ -68,20 +69,27 @@ body{
     flex-direction: column;
 }
 
+/*-------------------- MAIN TOP --------------------*/
+
 .main-top{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: row;
-    gap: 30px;
-    padding: 20px 130px;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 80px 130px;
 
     background-color: #1F2937;
 }
 
 .hero-text{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .hero-title{
@@ -95,17 +103,71 @@ body{
     color: #e2e4e6;
 }
 
-.hero-picture{
-    height: 200px;
-    width: 300px;
-    flex-shrink: 0;
+.sign-up-top{
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+
 }
 
+.hero-picture{
+    height: 290px;
+    width: 500px;
+    flex-shrink: 0;
+    justify-content: flex-start;
+}
+
+
+/*-------------------- MAIN MIDDLE --------------------*/
+
 .main-middle{
-    flex-shrink: 1;
-    height: 200px;
+    padding: 80px 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 
     background-color: #E5E7EB;
+    text-align: center;
+}
+
+.main-middle-header{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.main-middle-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.item{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+.item-text {
+    font-size: 18px;
+    color: #1F2937;
+    width: 130px;
 }
 
 .main-bottom{
