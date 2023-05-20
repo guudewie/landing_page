@@ -1,6 +1,6 @@
-/*
+
 *{border: 2px solid royalblue;}
-*/
+
 
 body{
     margin: 0;
@@ -69,10 +69,36 @@ body{
 }
 
 .main-top{
-    flex-shrink: 1;
-    height: 200px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: row;
+    gap: 30px;
+    padding: 20px 130px;
 
     background-color: #1F2937;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.hero-title{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.hero-sub-title{
+    font-size: 18px;
+    color: #e2e4e6;
+}
+
+.hero-picture{
+    height: 200px;
+    width: 300px;
+    flex-shrink: 0;
 }
 
 .main-middle{
