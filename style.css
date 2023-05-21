@@ -259,11 +259,16 @@ button{
 /*###############################################################*/
 
 .crazy{
-    font-size: large;
+    font-size: 36px;
     color: #E5E7EB;
     font-weight: bold;
     flex: 1;
     text-align: center;
+}
+
+.crazy.small{
+    font-size: medium;
+    font-weight: 400;
 }
 
 #crazy{
@@ -277,6 +282,25 @@ button{
     align-items: center;
     gap: 40px;
 }
+
+#button:hover {
+
+    background-color: #e2e4e6;
+    border: none;
+    color: #1F2937;
+
+}
+
+
+#button {
+
+    background-color: #1F2937;
+    border: 1.5px solid #e2e4e6;
+    color: #e2e4e6;
+
+}
+
+
 
 .crazy-image{
     width: 300px;
